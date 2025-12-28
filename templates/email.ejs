@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+</head>
+<body style="margin:0;padding:0;background:#f4f6f8;font-family:Arial,Helvetica,sans-serif;">
+
+  <table width="100%">
+    <tr>
+      <td align="center">
+
+        <table width="600" style="background:#ffffff;margin:30px 0;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08)">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#667eea,#764ba2);padding:25px;text-align:center;color:#ffffff">
+              <h1 style="margin:0;font-size:26px;"><%= title %></h1>
+              <p style="margin-top:5px;color:#e0e0ff;"><%= subtitle %></p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:30px;color:#333333;">
+              <h2 style="margin-top:0;">Hello <%= username %> 👋</h2>
+
+              <p style="font-size:16px;line-height:1.6;">
+                <%= message %>
+              </p>
+
+              <ul style="font-size:15px;line-height:1.8;padding-left:18px;">
+                <li>OTP Verification</li>
+                <li>Password Reset</li>
+                <li>Notifications</li>
+              </ul>
+
+              <div style="text-align:center;margin:30px 0;">
+                <a href="<%= actionUrl %>"
+                  style="background:#667eea;color:#ffffff;padding:14px 28px;border-radius:30px;text-decoration:none;font-size:16px;">
+                  <%= buttonText %>
+                </a>
+              </div>
+
+              <p style="font-size:14px;color:#666;">
+                If you didn’t request this email, please ignore it.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background:#f1f3f5;padding:18px;text-align:center;font-size:13px;color:#777;">
+              © 2025 Anand Kumar Shaw • Built with Node.js
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
